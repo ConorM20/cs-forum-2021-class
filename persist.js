@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 function connect(callback) {
-  let connectionString = `mongodb+srv://todo_2021:cm337118@cluster0.nptpx.mongodb.net/myFirstDatabase?`;
+  let connectionString = `mongodb+srv://forum-2021:cm337118@cluster0.nptpx.mongodb.net/myFirstDatabase?`;
 
   //mongodb+srv://todo_2021:cm337118@cluster0.nptpx.mongodb.net/myFirstDatabase?
 
@@ -11,7 +11,6 @@ function connect(callback) {
     .connect(connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false,
     })
     .catch((err) => {
       console.log("There was an error connecting to the db", err);
